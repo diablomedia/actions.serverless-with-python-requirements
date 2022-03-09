@@ -21,7 +21,7 @@ async function installServerlessAndPlugins() {
 //  Runs Serverless deploy using SERVERLESS_ACCESS_KEY if specified, else AWS Credentials
 async function runServerlessDeploy() {
   await exeq(
-    `echo Directory is set to: ${DIRECTORY}...`,
+    `cd ${DIRECTORY}`,
     `echo Running sls deploy ${ARGS}...`,
     `if [ ${process.env.AWS_ACCESS_KEY_ID} ] && [ ${process.env.AWS_SECRET_ACCESS_KEY} ]; then
       sls config credentials --provider aws --key ${process.env.AWS_ACCESS_KEY_ID} --secret ${process.env.AWS_SECRET_ACCESS_KEY} ${ARGS}
