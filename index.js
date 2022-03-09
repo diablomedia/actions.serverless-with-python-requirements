@@ -6,7 +6,7 @@ var exeq = require('exeq')
 
 //  Input variables
 var ARGS = core.getInput('args')
-const DIR = core.getInput('dir')
+var DIR = core.getInput('dir')
 
 //  Installs Serverless and specified plugins
 async function installServerlessAndPlugins() {
@@ -21,7 +21,6 @@ async function installServerlessAndPlugins() {
 //  Runs Serverless deploy using SERVERLESS_ACCESS_KEY if specified, else AWS Credentials
 async function runServerlessDeploy() {
   await exeq(
-    `echo Running in directory ${DIR}...`
     `echo Running sls deploy ${ARGS}...`,
     `if [ ${process.env.AWS_ACCESS_KEY_ID} ] && [ ${process.env.AWS_SECRET_ACCESS_KEY} ]; then
       sls config credentials --provider aws --key ${process.env.AWS_ACCESS_KEY_ID} --secret ${process.env.AWS_SECRET_ACCESS_KEY} ${ARGS}
