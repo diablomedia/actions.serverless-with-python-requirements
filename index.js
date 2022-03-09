@@ -12,7 +12,7 @@ var DIRECTORY = core.getInput('dir')
 async function installServerlessAndPlugins() {
   await exeq(
     'echo Installing Serverless and plugins...',
-    'npm i serverless -g',
+    'npm i serverless@2 -g',
     'npm i serverless-python-requirements',
     'npm i serverless-plugin-canary-deployments'
   )
