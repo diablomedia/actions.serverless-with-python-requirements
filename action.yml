@@ -5,6 +5,10 @@ inputs:
     default: ''
     description: 'Additional arguments you want to set'
     required: false
+  dir:
+    default: ''
+    description: 'Directory to run sls deploy from'
+    required: 'false'
 
 runs:
   using: 'node12'
