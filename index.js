@@ -6,7 +6,7 @@ var exeq = require('exeq')
 
 //  Input variables
 var ARGS = core.getInput('args')
-var DIR = core.getInput('dir')
+const DIR = core.getInput('dir')
 
 //  Installs Serverless and specified plugins
 async function installServerlessAndPlugins() {
