@@ -8,6 +8,10 @@ Javascript action that runs a Serverless deploy using the serverless-python-requ
 
 **Optional** Additional arguments you want to set.
 
+### `dir`
+
+**Optional** Directory that serverless should be deployed from.
+
 ## Environment Variables
 
 ### `aws-access-key-id`
