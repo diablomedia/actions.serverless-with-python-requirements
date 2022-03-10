@@ -44,6 +44,7 @@ Javascript action that runs a Serverless deploy using the serverless-python-requ
   uses: dhollerbach/actions.serverless-with-python-requirements@master
   with:
     args: ''  # any deploy arguments you want to pass
+    dir: '' #github actions matrix of directories you wish to deploy
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -64,6 +65,7 @@ Javascript action that runs a Serverless deploy using the serverless-python-requ
   uses: dhollerbach/actions.serverless-with-python-requirements@master
   with:
     args: ''  # any deploy arguments you want to pass
+    dir: '' #github actions matrix of directories you wish to deploy
   env:
     SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
 ```
