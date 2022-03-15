@@ -29,6 +29,7 @@ Javascript action that runs a Serverless deploy using the serverless-python-requ
 ## Example usage
 
 #### AWS Credentials
+##### Access Key envrioment variables can be omitted when using aws-actions/configure-aws-credentials@v1
 ```
 - name: Set up Node
   uses: actions/setup-node@v1
