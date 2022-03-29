@@ -14,7 +14,8 @@ async function installServerlessAndPlugins() {
     'echo Installing Serverless and plugins...',
     'npm i serverless -g',
     'npm i serverless-python-requirements',
-    'npm i serverless-plugin-canary-deployments'
+    'npm i serverless-plugin-canary-deployments',
+    'nmp i serverless-plugin-aws-alerts'
   )
 }
 
