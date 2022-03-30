@@ -16,7 +16,8 @@ async function installServerlessAndPlugins() {
     'npm i serverless-python-requirements',
     'npm i serverless-plugin-canary-deployments',
     'npm i serverless-plugin-aws-alerts',
-    'npm i serverless-plugin-log-subscription'
+    'npm i serverless-plugin-log-subscription',
+    'npm i serverless-domain-manager'
   )
 }
 
